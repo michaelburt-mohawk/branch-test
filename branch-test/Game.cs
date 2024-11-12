@@ -18,7 +18,7 @@ namespace Game10003
         /// </summary>
         public void Setup()
         {
-
+            Window.SetSize(800, 600);
         }
 
         /// <summary>
@@ -26,7 +26,10 @@ namespace Game10003
         /// </summary>
         public void Update()
         {
+            Window.ClearBackground(Color.White);
 
+            Draw.FillColor = Color.Red;
+            Draw.Circle(new(100, 100), 50);
         }
     }
 }
